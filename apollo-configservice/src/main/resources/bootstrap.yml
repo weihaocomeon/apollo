@@ -2,6 +2,8 @@ eureka:
   instance:
     hostname: ${hostname:localhost}
     preferIpAddress: true
+    ip-address: 127.0.0.1
+    instance-id: ${spring.cloud.client.ipAddress}:${server.port}
   server:
     peerEurekaNodesUpdateIntervalMs: 60000
     enableSelfPreservation: false
@@ -11,7 +13,6 @@ eureka:
     healthcheck:
       enabled: true
     eurekaServiceUrlPollIntervalSeconds: 60
-
 endpoints:
   health:
     sensitive: false

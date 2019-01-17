@@ -2,19 +2,19 @@
 
 # apollo config db info
 apollo_config_db_url=jdbc:mysql://localhost:3306/ApolloConfigDB?characterEncoding=utf8
-apollo_config_db_username=root
-apollo_config_db_password=
+apollo_config_db_username=ztgeoadmin
+apollo_config_db_password=ztgeohlw
 
 # apollo portal db info
 apollo_portal_db_url=jdbc:mysql://localhost:3306/ApolloPortalDB?characterEncoding=utf8
-apollo_portal_db_username=root
-apollo_portal_db_password=
+apollo_portal_db_username=ztgeoadmin
+apollo_portal_db_password=ztgeohlw
 
 # meta server url, different environments should have different meta server addresses
 dev_meta=http://localhost:8080
-fat_meta=http://someIp:8080
-uat_meta=http://anotherIp:8080
-pro_meta=http://yetAnotherIp:8080
+#fat_meta=http://172.18.0.147:8081
+# uat_meta=http://anotherIp:8080
+# pro_meta=http://·yetAnotherIp:8080
 
 META_SERVERS_OPTS="-Ddev_meta=$dev_meta -Dfat_meta=$fat_meta -Duat_meta=$uat_meta -Dpro_meta=$pro_meta"
 
